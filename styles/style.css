@@ -6,7 +6,16 @@
     font-family: sans-serif;
 }
 
+html {
+    font-size: 62.5%; /* 10px = 1rem*/
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 .container {
+    padding: 0 1.5rem;
     display: flex;
 }
 
@@ -15,12 +24,13 @@ a {
 }
 
 header {
+    width: 100%;
     background-color: black;
     border-bottom: 3px solid #63b1bc;
 }
 
 header .container {
-    padding: 35px 120px 35px 120px;
+    padding: 3.5rem 12rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,25 +59,26 @@ header .container .navbar ul li a:hover {
 }
 
 .section-banner {
-    height: 500px;
-    background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
-    background-repeat: no-repeat;
+    max-height: 50rem;
+    width: 100%;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background: no-repeat url("../assets/imgs/bg-jelly-fish-para-home.png") center center,black;
 }
 
 .section-banner .container {
     height: 100%;
     justify-content: center;
     align-items: center;
-    
 }
 
 .section-banner .container p{
     width: min-content;
     color:white;
-    font-size: 45px;
+    font-size: 4.5rem;
 }
 .section-banner .container p strong {
-    transition: all 0.5s ease-out;
+    transition: color 0.5s ease-out;
 }
 
 .section-banner .container p:hover strong {
@@ -75,7 +86,7 @@ header .container .navbar ul li a:hover {
 }
 
 .section-social {
-    padding: 100px 0 100px 0;
+    padding: 10rem 0 10rem 0;
     background-color: black;
     border-top: 2px dashed #e3b062;
     border-bottom: 2px dashed #e3b062;
@@ -92,12 +103,13 @@ header .container .navbar ul li a:hover {
     height: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .section-social .container .boxes .box {
-    padding: 20px;
-    width: 300px;
+    padding: 2rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,13 +117,13 @@ header .container .navbar ul li a:hover {
 
     text-align: center;
     border: 2px solid #e3b062;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background-color: #00001d;
 }
 
 .section-social .container .boxes .box h4 {
-    margin-bottom: 35px;
-    font-size: 30px;
+    margin-bottom: 3.5rem;
+    font-size: 3rem;
 }
 .section-social .container .boxes .box h4,
 .section-social .container .boxes .box p {
@@ -119,9 +131,35 @@ header .container .navbar ul li a:hover {
 }
 
 .section-social .container .boxes .box img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 30px;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+}
+
+/* login page*/
+
+.section-login {
+    background: no-repeat url("../assets/imgs/bg-jelly-fish-para_outras_pags.png") center center, black ;
+}
+
+.section-login .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-login .card {
+    border: 1px solid rgb(69, 81, 255);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(3.5px);
+    background-color: rgba(255, 255, 255, 0.0392156863);
+}
+
+.section-login .card-login {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    padding: 4rem;
+    color: white;
 }
 
 footer {
@@ -131,7 +169,6 @@ footer {
 }
 
 footer .container {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -147,4 +184,4 @@ footer .container .version {
 footer .container .version{
     margin-top: 10px;
     font-weight: bold;
-} 
+}
