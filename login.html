@@ -29,7 +29,7 @@
                         <a href="simulador.html">Simulador</a>
                     </li>
                     <li>|</li>
-                    <li>
+                    <li class="agora">
                         <a href="#">Login</a>
                     </li>
                     <li>
@@ -63,12 +63,21 @@
     <!--footer inicio-->
     <footer>
         <div class="container">
-            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2024</h4>
+            <h4>Feito com amor por Fillipe &hearts; SPTech &copy; 2024</h4>
             <span class="version">v1.0.0</span>
         </div>
     </footer>
     <!--footer fim-->
 
 </body>
+    <script>
+        function validation(){
+            const pass = senha_input.value
+            const user = email_input.value
 
+            if(pass == "urubu.silva@sptech.school" && user == "urubu100"){
+                window.location.replace("/");
+            }
+        }
+    </script>
 </html>

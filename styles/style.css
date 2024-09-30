@@ -30,7 +30,7 @@ header {
 }
 
 header .container {
-    padding: 3.5rem 12rem;
+    padding: 2.5rem 12rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,35 +39,32 @@ header .container .titulo {
     color: #63b1bc;
 }
 
-header .container .navbar ul {
+header .container nav ul {
     display: flex;
     gap: 20px;
 }
 
-header .container .navbar ul li {
+header .container nav ul li {
     list-style: none;
     color: #e3b062;
 }
 
-header .container .navbar ul li a{
+header .container nav ul li a{
     text-decoration: none;
     color: #e3b062;
 }
 
-header .container .navbar ul li a:hover {
+header .container nav ul li a:hover {
     color: blanchedalmond;
 }
 
-.section-banner {
-    max-height: 50rem;
-    width: 100%;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
-    background: no-repeat url("../assets/imgs/bg-jelly-fish-para-home.png") center center,black;
+.agora a {
+    font-weight: bold;
 }
 
 .section-banner .container {
-    height: 100%;
+    background: no-repeat url("../assets/imgs/bg-jelly-fish-para-home.png") center center,black;
+    max-height: 50rem;
     justify-content: center;
     align-items: center;
 }
@@ -76,6 +73,8 @@ header .container .navbar ul li a:hover {
     width: min-content;
     color:white;
     font-size: 4.5rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
 .section-banner .container p strong {
     transition: color 0.5s ease-out;
@@ -136,30 +135,127 @@ header .container .navbar ul li a:hover {
     margin-bottom: 3rem;
 }
 
-/* login page*/
+/* card      */
 
-.section-login {
-    background: no-repeat url("../assets/imgs/bg-jelly-fish-para_outras_pags.png") center center, black ;
-}
-
-.section-login .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-login .card {
+.card {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
     border: 1px solid rgb(69, 81, 255);
     border-radius: 1.5rem;
     backdrop-filter: blur(3.5px);
     background-color: rgba(255, 255, 255, 0.0392156863);
 }
 
+.card h2 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.card span {
+    font-size: 2.5rem;
+}
+
+.card span,
+.card h2
+ {
+    color: crimson;
+}
+
+.card input {
+    height: 3rem;
+    border: 2px solid #63b1bc;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.4rem;
+    font-size: 1.8rem;
+    background-color: #0b080f;
+    color: wheat;
+}
+
+.card input:focus {
+    outline: none;
+    border-color: wheat;
+}
+
+.card .botao{
+    padding: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 0.8rem;
+    background-color: #63b1bc;
+    color: rgb(11, 8, 15);
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition-property: background-color;
+    transition: 0.3s ease-in-out;
+}
+
+.card .botao:hover{
+    border: 2px solid wheat;
+    background-color: transparent;
+    color: wheat;
+}
+
+.card .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card .formulario .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+}
+
+/* login page*/
+
+.section-login .container {
+    max-height: 83rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat url("../assets/imgs/bg-jelly-fish-para_outras_pags.png") center center, black;
+}
+
 .section-login .card-login {
-    margin-top: 20rem;
-    margin-bottom: 20rem;
-    padding: 4rem;
-    color: white;
+    padding: 4rem 8rem;
+}
+
+/* sign-up */
+
+.section-cadastro .container {
+    max-height: 83rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat url("../assets/imgs/bg-jelly-fish-para_outras_pags.png") center center, black;
+}
+
+.section-cadastro {
+    max-height: 83rem;
+}
+
+.card-cadastro {
+    margin: 3rem 0;
+    width: 50rem;
+    text-align: center;
+}
+
+.card-cadastro span {
+    font-size: 2rem;
+}
+
+.section-cadastro .card-cadastro {
+    padding: 3rem 8rem;
+}
+
+.section-cadastro .formulario {
+    gap: 1rem;
+}
+
+.section-cadastro .card-cadastro h2 {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
 }
 
 footer {
